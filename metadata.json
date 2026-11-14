@@ -1,0 +1,6 @@
+{
+  "name": "Barbearia No Ponto — Chimoio",
+  "description": "Site oficial da Barbearia No Ponto em Chimoio, Moçambique. Corte, estilo e inovação! Sua aparência no ponto certo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
