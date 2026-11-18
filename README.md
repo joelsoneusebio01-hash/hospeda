@@ -2,12 +2,10 @@
 
 Site oficial da **Barbearia No Ponto** em Chimoio, Moçambique (Rua do Sussundenga, próximo à paragem do Tambara 2).
 
-## Funcionalidades
+## Stack
 
-- Tabela completa de serviços e preços em Meticais (MTS) com filtro por categoria
-- Agendamento direto via WhatsApp (`+258 87 978 2639`) com mensagem pré-preenchida para cada serviço
-- Galeria de cortes e estilos com visualização ampliada
-- SEO e dados estruturados (`HairSalon`) configurados para Chimoio, Moçambique
+- React 19 + TypeScript
+- Vite 8 + Tailwind CSS v4
 
 ## Executar localmente
 
@@ -21,3 +19,12 @@ npm run dev
 ```bash
 npm run build
 ```
+
+A pasta de saída gerada é `dist/`.
+
+## Configuração no Cloudflare Pages
+
+- **Framework preset**: `Vite`
+- **Build command**: `npm run build`
+- **Build output directory**: `dist`
+- **Environment variable**: `NODE_VERSION` = `22`

@@ -1,3 +1,11 @@
+import heroStorefrontImg from '../assets/optimized/hero-storefront.jpg';
+import corteCriancaImg from '../assets/optimized/corte-crianca.jpg';
+import cortesAdultosImg from '../assets/optimized/cortes-adultos.jpg';
+import corteEstiloImg from '../assets/optimized/corte-estilo.jpg';
+import brandToolsImg from '../assets/optimized/brand-tools.jpg';
+import barbaterapiaImg from '../assets/optimized/barbaterapia.jpg';
+import trancasEstilosImg from '../assets/optimized/trancas-estilos.jpg';
+
 export const BARBERSHOP_INFO = {
   name: 'Barbearia No Ponto',
   shortName: 'NO PONTO',
@@ -23,13 +31,13 @@ export function getWhatsAppBookingUrl(serviceName?: string): string {
 }
 
 export const IMAGES = {
-  heroStorefront: '/assets/optimized/hero-storefront.webp',
-  corteCrianca: '/assets/optimized/corte-crianca.webp',
-  cortesAdultos: '/assets/optimized/cortes-adultos.webp',
-  corteEstilo: '/assets/optimized/corte-estilo.webp',
-  heroBrandTools: '/assets/optimized/brand-tools.webp',
-  barbaterapia: '/assets/optimized/barbaterapia.webp',
-  trancasEstilos: '/assets/optimized/trancas-estilos.webp',
+  heroStorefront: heroStorefrontImg,
+  corteCrianca: corteCriancaImg,
+  cortesAdultos: cortesAdultosImg,
+  corteEstilo: corteEstiloImg,
+  heroBrandTools: brandToolsImg,
+  barbaterapia: barbaterapiaImg,
+  trancasEstilos: trancasEstilosImg,
 };
 
 export interface BenefitItem {

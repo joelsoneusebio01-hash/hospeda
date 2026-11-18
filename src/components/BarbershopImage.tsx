@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import {Scissors} from 'lucide-react';
 
 interface BarbershopImageProps {
@@ -17,6 +17,10 @@ export function BarbershopImage({
   priority = false,
 }: BarbershopImageProps) {
   const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    setHasError(false);
+  }, [src]);
 
   if (hasError || !src) {
     return (
@@ -39,7 +43,6 @@ export function BarbershopImage({
       alt={alt}
       referrerPolicy="no-referrer"
       loading="eager"
-      decoding="async"
       fetchPriority={priority ? 'high' : 'auto'}
       onError={() => setHasError(true)}
       className={className}
